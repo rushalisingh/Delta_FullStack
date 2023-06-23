@@ -1,0 +1,107 @@
+Types of Selectors
+
+1.Universal Selector - to select everything in a document
+    
+    *{
+        property :value;
+     }
+
+2. Element Selector - selects all elements of same Types
+    
+    h1{
+        property:value;
+    }
+
+3. ID Selector - selects an element based on the value of the element's id attribute
+   
+   #myId{
+           property:value;
+        }
+
+4.Class Selector - selects an element based on their class attribute
+
+    .myclass{
+        property:value;
+    }
+
+5.Descendant Selector -selects all paragraphs inside divs and can select any levels 
+
+    div p{
+        property: value;
+    }
+
+6.Adjacent Sibling Combinator - heading3 that comes immediately after any paragraph
+        (combines 2 element Selector)
+
+    p + h3 {
+        property:value;
+    }
+
+7. Child Combinator - selects all buttons which are direct children of spans
+
+    span> button {
+        property :value;
+    }
+
+8.Attribute Selector - selects elements based on the presence or value of given attribute
+
+    input[attr="value"]{
+        property:value;
+    }
+
+
+
+Pseudo Class - A keyword to a selector that specifies a special state of selected element(s)
+     
+     1.hover
+     2.active
+     3.checked
+     4.nth-of-type
+
+
+
+Pseudo Elements - A keyword added to selector that lets you style a specific part of the selected element(s)
+     1.first-letter
+     2.first-line
+     3.selection
+
+
+CSS : Cascading StyleSheets
+What is cascade in CSS?
+The CSS cascade algorithm's job is to select CSS declarations in order to determine the correct values for CSS properties.
+
+    h2{
+        background-color:yellow;
+    }
+    h2{
+        background-color:blue;
+    }
+
+
+
+Selector Specificity 
+What is Specificity? 
+Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+
+____    ______________________________    __________________________
+id      class,attribute & pseudo-class     element & pseudo-element
+
+
+What to remember?
+1.importance in decreasing order :
+            id > class > element
+2. more selectors (better to use ) than  less selector - as CSS gets more priority with more selectors
+3. if Specificity same => see cascading
+4. Inline Style has the highest priority , once implementedw we can't make further change - so avoid using inline sytle
+
+
+
+!important - to show the most specific thing in document
+
+    h2{
+        background-color: blue !important;
+    }
+
+
+For choosing colors for your website - search for color palettes on google
+      it'll help you in finding which color combination will suit.

@@ -1,0 +1,117 @@
+Css stands for Cascading Style Sheets
+It makes the sites appealing and decorative.
+It is a language used to describe the syle of a document.
+
+
+h1 - selector
+{
+    color      :  red; 
+    (property)   (value)
+}
+
+How to include styles?
+Writing style directly inline on each element.
+
+<h1 style ="color : red"> My website </h1>
+
+
+Way how css is implemented :
+
+
+    Way 1: Inline Style implemented here
+    <h1 style="color:red">MY WEBSITE</h1>
+    <p style="color: pink">This is a paragrapgh</p>
+    <button style="color: blue; background-color : orange">Help</button> 
+
+    Way 2: using <style> tag
+            Style is added using the <style> element in the same document. 
+    
+    Way 3: External stylesheet
+        Writing CSS in a seperate doccument & linking it with HTML file
+
+
+Color Property 
+Used to set the color of foreground. 
+
+Ways to write the color: 
+    1- directly write the name
+    2- write the # code
+    3 - write the rgb value
+
+Background  Color Property - Used to set the color of background.
+
+    background-color :purple;
+    background-color: #ffffff;
+
+Color Systems 
+    1.Named colors
+    Each browser recognizes around 150 named colors.
+    eg: red ,blue , pink,purple,magenta,teal,etc.
+
+
+    2.RGB value
+    * Use color picker on google to select of your choice (it provides rgb value as well as hexCode)
+    R : 0-255
+
+    3.Hexadecimal value
+     hexCode : 00-ff (choose any code)
+     #ff    a6   11
+     __     __   __
+    red  green blue
+
+    * shortcuts
+     #fff =#ffffff
+     #0f0 =#00ff00
+
+
+     Text Properties
+
+     1.text-align (relative to parent element not according to page)
+                1.1 left/start  or left/end
+                1.2 right/end  or right/start
+                1.3 centere 
+                1.4 justify
+
+     2.font-weight 
+                2.1 normal //400 
+                2.2 bold //700 
+                2.3 100 
+                2.4 (bolder,lighter)<-parent
+
+     3.text-decoration - sets the apprearence of decorative lines on text like underline
+                3.1 underline 
+                3.2 overline
+                3.3 line-through - cuts the word using line
+                eg : text-decoration : red underline/overline/line-through;
+                     text-decoration : wavy underline /overline/line-through;
+                     text-decoration : dotted underline /overline/line-through;
+                     text-decoration : double blue underline;
+
+     4.line-height- controls the height of the line of text
+                eg : line-height : normal
+                     line-height : 2.5
+
+     5.letter-spacing -controls the horizontal spacing behavior between text characters
+                eg : letter-spacing : normal
+                     letter-spacing : 10px
+
+     6.font-size units in CSS
+            Absolute   |  Relative
+                px          %
+                pt          em
+                pc          rem
+                cm          ch
+                mm          vh 
+                in          vw + many more
+
+            1.pixels(px)
+             most commonly used absolute unit
+             96px = 1 inch
+             not sutibale for responsive websites
+
+     7.font-family - specifies a prioritized list of one or more font family names
+
+                eg: font-family :arial;
+                    font-family : avant garde,didot,sans-serif;
+            * use cssfontstack.com website for explore fonts
+
