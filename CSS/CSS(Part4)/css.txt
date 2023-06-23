@@ -1,0 +1,64 @@
+Alpha Channel  - Sets the opacity for a color .
+                 Ranges from 0 to 1.
+    0-invilsie , 1- completely visisble
+    rgba(255,255,255,0.3)
+
+
+
+Opacity  - sets the opacity for the element. 
+            Ranges from 0 to 1
+
+
+
+Transitions - Enable you to define the transition betweeen two states of an element.
+
+       eg. sqaure to circle
+
+    Transition Shorthand - property name |duration |timing-function|delay
+            transition   - margin-top 2s ease-in-out 0.2s;
+
+
+CSS Transform - This property lets you rotate , scale ,skew or translate an element.
+                Can use multiple properties together.
+    1.Roate 
+        transform : rotate(45deg);
+    2.Scale -can be applied on 2D or 3D
+        transform : scale(0.5);
+    3.Translate - only for 2D plane (x or y axis)
+        transform : translate (50px ,50px);
+        transform : translateX(10px);
+        transform : translateY(10px);
+    4.Skew 
+        transform : skew(30deg);
+
+Box Shadow - It adds Shadow effects around an element's frame.
+        box-shadow : 2px      2px      10px       green;
+                     x offset y offset blur radius
+                    
+
+Background Image - lets you set an image as background.
+
+    background-image : url("../somepath/..img.jpeg")
+    background-size : contain/cover/auro;
+       
+       contain - cannot crop or scale but repeat
+       cover - cannot scale but crop
+       auto - stretch
+
+Position Property - sets how an element is positioned in a document.
+                The top, right , bottom and left property determines the final location of positioned elements.
+
+    1.static
+        The top ,right, bottom ,left nad z-index have no effect. 
+        This is default value.
+
+    2.relative
+        the offset is relative to itself based on the values of top ,right,bottom and left.
+
+    3.absolute
+        the element is removed from the normal document flow , and no space is created for the element in the page layout.
+        It is positioned relative to its closest positioned ancestor , if any ;otherwise , it is placed relative to the initial conatining block.
+
+    4.fixed
+        the element is removed from the normal document flow , and no space is created for the element in the page layout.
+        It is positioned relative to the initial conatining block established by the viewport.
