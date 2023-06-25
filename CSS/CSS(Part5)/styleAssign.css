@@ -1,0 +1,44 @@
+#outer {
+    height: 400px;
+    width: 400px;
+    border: 2px solid #209682;
+    display: flex;
+    border-radius: 15px;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inner {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: grey;
+    font-size: 50px;
+    text-align: center;
+}
+
+#navbar {
+    height: 50px;
+    width: 900px;
+    display: flex;
+    border: 2px solid #209682;
+    border-radius: 10px;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.head {
+    height: 50px;
+    width: 80px;
+    display: inline;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-left: 5px;
+    line-height: 50px;
+}
