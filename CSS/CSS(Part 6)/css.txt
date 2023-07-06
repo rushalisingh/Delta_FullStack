@@ -1,0 +1,107 @@
+CSS Grid 
+    Setting a container's display to grid will make all children grid items.
+
+    container {
+         display : grid;
+    }
+
+Grid lines - lines in x axis or y axis
+
+Grid Cell - space formed between the lines (sqaure space)
+
+Grid track - space between two lines
+
+Grid Template - They define the lines & track sizing
+    track = no.of lines + 1
+
+    grid-template-rows : 100px 100px 100px ;
+
+    grid -template-columns : auto auto ; //divides space into 2 equally
+            if auto auto auto - divides space into 3 columns equally.
+
+Grid Template repeat 
+    - repeat is used to divide all available space
+
+        1fr - 1 fraction of 100% width or 100% available space
+
+    grid-template-rows : repeat(count , 1fr);
+
+    grid-template-columns : repeat(count , 1fr);
+
+    grid-template-rows : repeat(2,1fr)
+
+    grid-template-columns: 1fr 1fr
+
+Grid Gaps - They define the gaps between the lines
+
+    row-gap : 
+
+    column-gap :
+
+    grid-gap : rowGap columnGap
+
+Grid Columns - define an items's starting and ending position inside the column
+
+    grid-column-start : line_number
+
+    grid-column-end : line_number
+
+    grid-column : start_col/ end_col
+
+    grid-column : start_col / span number
+
+Common Properties 
+
+    Horizontal
+        1.justify-items(container)
+        2.justify-self(item)
+
+    Vertical
+        1.align-items(container)
+        2.align-self(item)
+
+    3.place-items
+    4.place-self
+
+inline-grid : to display objects inline.
+
+Media Queries -Help create a responsive website.
+
+    media-features - width (of viewport)
+
+    @media(width : 400px){
+        div {
+            background-color : red;
+        }
+    }
+
+    @media(min-width : 400px){
+        div {
+            background-color : red;
+        }
+    }
+
+    @media(max-width : 400px){
+        div {
+            background-color : red;
+        }
+    }
+
+    @media(min-width :200px) and (max-width : 300px)
+    {
+        h1 {
+            background-color: magenta;
+        }
+    }
+
+    z-index - It decides the stack level of elements
+
+    Overlapping elements with larger z-index cover those with smaller one.
+
+        z-index :auto (0)
+        z-index : 1/2/..
+        z-index : 1/-2/--
+
+
+
+    
